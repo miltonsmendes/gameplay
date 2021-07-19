@@ -6,10 +6,14 @@ import { ImageBackground, Text, View, FlatList } from 'react-native';
 import { Background } from '../../components/Background';
 import { Header } from '../../components/Header';
 import { ListHeader } from '../../components/ListHeader';
+import { ButtonIcon } from '../../components/ButtonIcon';
+import { Member } from '../../components/Member';
 
 import { theme } from '../../global/styles/theme';
 import BannerImg from '../../assets/banner.png';
 import { styles } from './styles';
+import { ListDivider } from '../../components/ListDivider';
+
 
 
 export function AppointmentDetails() {
@@ -69,9 +73,17 @@ export function AppointmentDetails() {
                 data={members}
                 keyExtractor={item => item.id}
                 renderItem={({ item }) => (
-                    //Criando componente Member
+                    <Member data={item} />
                 )}
+
+                ItemSeparatorComponent={() => <ListDivider />}
+                style={styles.members}
             />
+
+
+            <View style={styles.footer}>
+                <ButtonIcon title="Entrar na partida" />
+            </View>
 
         </Background>
     );
