@@ -50,7 +50,7 @@ export function AppointmentCreate() {
 
 
                             <View style={styles.selectBody}>
-                                <Text style={styles.label}>
+                                <Text style={[styles.label, { marginBottom: 0 }]}>
                                     Selecione um servidor
                                 </Text>
                             </View>

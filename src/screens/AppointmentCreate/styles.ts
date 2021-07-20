@@ -11,6 +11,7 @@ export const styles = StyleSheet.create({
         fontFamily: theme.fonts.title700,
         color: theme.colors.heading,
         marginBottom: 12,
+        justifyContent: 'center',
     },
 
     form: {
