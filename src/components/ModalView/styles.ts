@@ -20,7 +20,6 @@ export const styles = StyleSheet.create({
         backgroundColor: theme.colors.secondary30,
         alignSelf: 'center',
         marginTop: 13,
-
-        //PAROU EM 1:57 DA AULA 03
+        marginBottom: 103,
     },
 });
