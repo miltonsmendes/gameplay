@@ -65,7 +65,7 @@ export function AppointmentCreate() {
                         <View style={styles.select}>
                             {
                                 guild.icon ? <GuildIcon /> : <View style={styles.image} />
-
+                                // PAROU NA AULA 5 MINUTO 1:02:10
                             }
 
                             <View style={styles.selectBody}>
